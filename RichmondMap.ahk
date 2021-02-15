@@ -11,8 +11,7 @@ Loop
 ImageSearch, FoundX, FoundY, 1483, 271, 1612, 325, *50 *TransBlack F:\Elevation data\58.bmp
 if (ErrorLevel = 0)
    {
-   MsgBox Found.   
-   Gui, -Caption +AlwaysOnTop +ToolWindow +LastFound
+    Gui, -Caption +AlwaysOnTop +ToolWindow +LastFound
    Gui, Margin, 0, 0 ; Remove margins to get perfect alignment with center of screen
    Gui, Add, Picture, , Richmond.png ; Picture file name, in the same folder as the script
    Controlgetpos, , , picW, picH, , ; Store picture width and height in variables
@@ -25,4 +24,3 @@ if (ErrorLevel = 0)
 else
    Sleep 1000
 }
-*/
